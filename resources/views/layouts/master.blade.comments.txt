@@ -1,0 +1,12 @@
+<!-- Protection contre l'injection de script JS à l'affichage avec les {{}} :
+{{$variable}} correspond à ?php echo htmlentities($variable); ?> -->
+
+<!-- Retourne le lien vers la feuille de style qui se trouve dans le dossier public :
+{{asset('css/app.css')}} correspond à http://localhost:8000/css/app.css -->
+
+<!-- Même principe pour les JS :
+{{asset('js/app.js')}} -->
+
+<!-- Permet d'étencdre le layout pour insérer une vue composite à l'intérieur :
+@yield('content')
+On y mettra une vue composite par extension -->
